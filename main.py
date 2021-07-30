@@ -21,7 +21,7 @@ async def on_ready():
 @bot.event
 async def on_message(message):
   #Statements that execute when a message is sent in a server(guild), the bot is in
-  print(message.content)
+  await bot.process_commands(message)
 @bot.event
 async def on_member_join(member):
   #Statements that execute when someone joins a server the bot is in
