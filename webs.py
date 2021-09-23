@@ -22,4 +22,4 @@ def keep_alive():
  t=Thread(target=run)
  t.start()
  if __name__ == '__main__':
-  app.run(host='0.0.0.0',port=8081) # This line is required to run Flask on repl.it
+  app.run(host='0.0.0.0',port=8081) 
