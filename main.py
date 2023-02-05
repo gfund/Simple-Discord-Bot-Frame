@@ -15,8 +15,7 @@ bot = commands.Bot(command_prefix='!',intents=intents)
 #--------------------EVENTS--------------------------
 @bot.event
 async def on_ready():
-  #Statements that execute when  the bot boots.
-  print("") # do nothing but enough not to cause an error
+ pass #do nothing for now (add any code you want to run when the bot boots here)
 
 @bot.event
 async def on_message(message):
@@ -25,10 +24,9 @@ async def on_message(message):
 @bot.event
 async def on_member_join(member):
   #Statements that execute when someone joins a server the bot is in
-  print(str(member))
+  pass
 
-
-#--------------------COMMANDS--------------------------  
+#Get the bot latency(ping)
 @bot.command()
 async def ping(ctx):
     await ctx.send((str((bot.latency*1000))) + "ms")
@@ -39,8 +37,9 @@ async def ping(ctx):
 
 
 
-#----------------------RUN BOT CODE-------------------------
 
+
+#RUN BOT
 
 
 #keep the bot online         
