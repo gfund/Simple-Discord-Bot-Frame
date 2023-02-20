@@ -1,4 +1,3 @@
-
 import os #used to access .env file 
 #DISCORD IMPORTS
 ###########################
